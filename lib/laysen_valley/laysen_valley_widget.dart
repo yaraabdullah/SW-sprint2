@@ -740,8 +740,7 @@ class _LaysenValleyWidgetState extends State<LaysenValleyWidget> {
                                                     .pushNamed('confirmation');
 
                                                 await BookingsRecord.collection
-                                                    .doc(widget
-                                                        .book!.reference.id)
+                                                    .doc()
                                                     .set(
                                                         createBookingsRecordData(
                                                       userID:

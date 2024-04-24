@@ -723,8 +723,7 @@ class _AlNakheelWidgetState extends State<AlNakheelWidget> {
                                                     .pushNamed('confirmation');
 
                                                 await BookingsRecord.collection
-                                                    .doc(widget
-                                                        .book!.reference.id)
+                                                    .doc()
                                                     .set(
                                                         createBookingsRecordData(
                                                       userID:

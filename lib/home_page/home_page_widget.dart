@@ -655,7 +655,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       0.0, 0.0, 0.0, 10.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
-                                      context.pushNamed('RoshnBusinessFront');
+                                      context.pushNamed('TheBusinessGate');
                                     },
                                     text: 'View details',
                                     options: FFButtonOptions(

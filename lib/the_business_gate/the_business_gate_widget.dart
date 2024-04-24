@@ -762,60 +762,34 @@ class _TheBusinessGateWidgetState extends State<TheBusinessGateWidget> {
                                                       0.0, 12.0, 0.0, 0.0),
                                               child: FFButtonWidget(
                                                 onPressed: () async {
-                                                  unawaited(
-                                                    () async {
-                                                      var bookingsRecordReference =
-                                                          BookingsRecord
-                                                              .collection
-                                                              .doc(widget
-                                                                  .book!
-                                                                  .reference
-                                                                  .id);
-                                                      await bookingsRecordReference
-                                                          .set(
-                                                              createBookingsRecordData(
-                                                        userID:
-                                                            currentUserReference,
-                                                        howManyPeople: _model
-                                                            .countControllerValue1,
-                                                        howManyHours: _model
-                                                            .countControllerValue2,
-                                                        time: _model.datePicked1
-                                                            ?.secondsSinceEpoch
-                                                            .toDouble(),
-                                                        date: _model.datePicked2
-                                                            ?.toString(),
-                                                        spaceName:
-                                                            '\"The Business Gate\"',
-                                                      ));
-                                                      _model.bookingID = BookingsRecord
-                                                          .getDocumentFromData(
-                                                              createBookingsRecordData(
-                                                                userID:
-                                                                    currentUserReference,
-                                                                howManyPeople:
-                                                                    _model
-                                                                        .countControllerValue1,
-                                                                howManyHours: _model
-                                                                    .countControllerValue2,
-                                                                time: _model
-                                                                    .datePicked1
-                                                                    ?.secondsSinceEpoch
-                                                                    .toDouble(),
-                                                                date: _model
-                                                                    .datePicked2
-                                                                    ?.toString(),
-                                                                spaceName:
-                                                                    '\"The Business Gate\"',
-                                                              ),
-                                                              bookingsRecordReference);
-                                                    }(),
-                                                  );
-
                                                   context.pushNamed(
                                                       'confirmation');
 
-                                                  setState(() {});
+                                                  unawaited(
+                                                    () async {
+                                                      await BookingsRecord
+                                                          .collection
+                                                          .doc()
+                                                          .set(
+                                                              createBookingsRecordData(
+                                                            userID:
+                                                                currentUserReference,
+                                                            howManyPeople: _model
+                                                                .countControllerValue1,
+                                                            howManyHours: _model
+                                                                .countControllerValue2,
+                                                            time: _model
+                                                                .datePicked1
+                                                                ?.secondsSinceEpoch
+                                                                .toDouble(),
+                                                            date: _model
+                                                                .datePicked2
+                                                                ?.toString(),
+                                                            spaceName:
+                                                                '\"The Business Gate\"',
+                                                          ));
+                                                    }(),
+                                                  );
                                                 },
                                                 text: 'Book Now',
                                                 options: FFButtonOptions(

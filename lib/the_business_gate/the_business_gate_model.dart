@@ -1,4 +1,3 @@
-import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'the_business_gate_widget.dart' show TheBusinessGateWidget;
 import 'package:flutter/material.dart';
@@ -13,8 +12,6 @@ class TheBusinessGateModel extends FlutterFlowModel<TheBusinessGateWidget> {
   int? countControllerValue2;
   DateTime? datePicked1;
   DateTime? datePicked2;
-  // Stores action output result for [Backend Call - Create Document] action in Button widget.
-  BookingsRecord? bookingID;
 
   @override
   void initState(BuildContext context) {}

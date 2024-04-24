@@ -735,8 +735,7 @@ class _MoonTowerWidgetState extends State<MoonTowerWidget> {
                                                     var bookingsRecordReference =
                                                         BookingsRecord
                                                             .collection
-                                                            .doc(widget.book!
-                                                                .reference.id);
+                                                            .doc();
                                                     await bookingsRecordReference
                                                         .set(
                                                             createBookingsRecordData(

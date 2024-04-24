@@ -720,8 +720,7 @@ class _RoshnBusinessFrontWidgetState extends State<RoshnBusinessFrontWidget> {
                                                     .pushNamed('confirmation');
 
                                                 await BookingsRecord.collection
-                                                    .doc(widget
-                                                        .book!.reference.id)
+                                                    .doc()
                                                     .set(
                                                         createBookingsRecordData(
                                                       userID:
