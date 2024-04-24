@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "636884892809",
+    "project_id": "swdatabase-7d37e",
+    "storage_bucket": "swdatabase-7d37e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636884892809:android:1f730a1e0bb945de671a58",
+        "android_client_info": {
+          "package_name": "com.mycompany.swsprint1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNwshXsBpmphHQWgrqTikQJYbkbB3JJMo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
